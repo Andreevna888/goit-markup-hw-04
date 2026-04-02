@@ -73,6 +73,15 @@ color: #4d5ae5;
     display: flex;
     align-items: center;
     gap: 40px;
+
+}
+.nav-list::after{
+    content: "";
+   display: inline-block;
+    border-radius: 2px;
+width: 48px;
+height: 4px;
+background-color: #404bbf;
 }
 
 .nav-lista{
@@ -122,6 +131,15 @@ color: #434455;
 
 .title-section{
 background-color: #2E2F42;
+background-image: linear-gradient( 
+    rgba(46, 47, 66, 0.7) 
+    rgba(46, 47, 66, 0.7))
+  url(../images/bacgraundfon.jpg);
+max-width: 1440px;
+margin: 0 auto;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
 
 }
 .container-main{
@@ -223,18 +241,19 @@ margin-bottom: 72px;
 
 .our-team-job{
     list-style: none; 
+    
 }
 .our-team-job{
     display: flex;
     gap: 24px;
-        padding-bottom: 120px;
-  
+    padding-bottom: 120px;
+
 }
+
 .section-img{
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
-
-   }
+}
  
  .box-text-name{
     font-weight: 500;
@@ -245,6 +264,16 @@ text-align: center;
 color: #2e2f42;
 
  }
+.our-team-icons{
+    fill: #ffffff;
+  
+        border-radius: 50%;
+    background-color: #4d5ae5;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
 
 .teamcardsection {
 
@@ -286,9 +315,13 @@ padding-top: 8px;
     padding-bottom: 120px;
 }
 .portfolio-list{
- 
+
 width: calc((100% - 24px * 2)/3);
 
+}
+.portfolio-fotocard{
+position: relative;
+overflow: hidden;
 }
 .portfolio-title{
     font-weight: 700;
@@ -309,6 +342,25 @@ margin-bottom: 72px;
 border-left: 1px solid #e7e9fc;
 border-right: 1px solid #e7e9fc;
     
+}
+.fotocard-text{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+background-color: #4d5ae5;
+width: 100%;
+height: 100%;
+padding: 32px;
+transform: translateY(100%);
+transition: tranform 0,5s cubic-bezier(0,4, 0, 0,2, 1);
+
+}
+.portfolio-list:hover .fotocard-text{
+transform: translateY(0);
 }
 .portfolio-img{
       display: flex;
@@ -333,7 +385,6 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 list-style: none; 
-
 
 }
 .portfolio-text{
