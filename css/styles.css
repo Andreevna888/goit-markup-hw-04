@@ -85,7 +85,7 @@ right: 0;
 height: 4px;
 background-color: #404bbf;
 position: absolute;
-bottom: -3px;
+bottom: -4px;
 }
 
 .nav-lista{
@@ -282,6 +282,8 @@ margin-bottom: 72px;
 .section-img{
     background-color: #ffffff;
     border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }
  .our-team-link-icon{
     display: flex;
@@ -360,6 +362,7 @@ width: calc((100% - 24px * 2)/3);
 .portfolio-fotocard{
 position: relative;
 overflow: hidden;
+
 }
 .portfolio-title{
     font-weight: 700;
