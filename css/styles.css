@@ -41,6 +41,8 @@ img { display: block; height: auto; max-width: 100%; }
 
 .header-page{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+background: #fff;
 }
 
 .header-container{
@@ -73,8 +75,6 @@ color: #4d5ae5;
     display: flex;
     align-items: center;
     gap: 40px;
-    
-
 }
 .nav-item.active .nav-lista::after{
     content: "";
@@ -348,7 +348,6 @@ padding-top: 8px;
 .our-portfolio{
     background-color: #FFFFFF;
     padding-top: 120px;
-
 
 }
 .container-portfolio{
